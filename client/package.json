@@ -1,0 +1,51 @@
+{
+  "name": "pm-graphql-client",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@babel/core": "^7.22.10",
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
+    "@next/font": "^13.4.4",
+    "flowbite-react": "^0.10.1",
+    "framer-motion": "^11.3.31",
+    "fuse.js": "^7.1.0",
+    "graphql": "^16.11.0",
+    "next": "13.4.3",
+    "react": "18.2.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.13.0",
+    "react-modal": "^3.16.1",
+    "react-scroll": "^1.9.0",
+    "react-toastify": "^11.0.5",
+    "react-tsparticles": "^2.9.3",
+    "swiper": "^11.2.6",
+    "tailwind-scrollbar": "^3.0.4",
+    "tsparticles": "^2.9.3",
+    "typescript": "^5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
