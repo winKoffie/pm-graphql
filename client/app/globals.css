@@ -1,0 +1,3 @@
+@import "tailwindcss";
+@compose tailwindcss/base;
+@compose tailwindcss/components;

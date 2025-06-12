@@ -1,5 +1,7 @@
 // font Setup
+import './globals.css';
 import { Sora } from 'next/font/google';
+import Header from './Header';
 
 //Font Settings
 const sora = Sora({
@@ -14,6 +16,7 @@ const Layout = ({ children }) => {
     <div
       className={`page bg-site text-black bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
+      <Header />
       {children}
     </div>
   );

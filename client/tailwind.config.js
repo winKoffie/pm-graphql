@@ -1,15 +1,10 @@
-const flowbite = require('flowbite-react/tailwind');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    flowbite.content(),
+    './src/**/*.{js,ts,jsx,tsx,mdx}', // optional if you use /src structure
   ],
   theme: {
     container: {
@@ -22,30 +17,25 @@ module.exports = {
       md: '768px',
       lg: '960px',
       xl: '1200px',
-      xxl: '1920',
+      xxl: '1920px', // ✅ Add px
     },
     extend: {
       colors: {
-        primary: '#2D2A32', // deep charcoal
-        accent: '#9B5DE5',  // purple
-        gold: '#D4AF37',    // gold
-      },
+        primary: '#2D2A32',
+        accent: '#9B5DE5',
+        gold: '#D4AF37',
 
+        // ✅ Support for your custom theme CSS variables
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
       fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
+        geist: ['var(--font-geist-sans)', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+        sora: ['var(--font-sora)', 'sans-serif'],
       },
     },
   },
-  container: {
-    padding: {
-      DEFAULT: '15px',
-    },
-  },
-
-  plugins: [flowbite.plugin()],
-  corePlugins: {
-    borderRadius: false,
-  },
-  
+  plugins: [], // 🚫 No Flowbite here
 };
