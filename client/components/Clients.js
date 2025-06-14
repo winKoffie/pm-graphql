@@ -27,7 +27,7 @@ const Clients = () => {
     <div className="mt-6 overflow-x-auto relative">
       <button
         type="button"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mb-4"
+        className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-500 mb-4"
         onClick={() => setShowModal(true)}
       >
         Add Client
