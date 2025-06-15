@@ -21,13 +21,13 @@ const Clients = () => {
   };
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p className="text-red-500">Error: {error.message}</p>;
+  if (error) return <p className="text-blue-500">Error: {error.message}</p>;
 
   return (
     <div className="mt-6 overflow-x-auto relative">
       <button
         type="button"
-        className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-500 mb-4"
+        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-500 mb-4"
         onClick={() => setShowModal(true)}
       >
         Add Client
